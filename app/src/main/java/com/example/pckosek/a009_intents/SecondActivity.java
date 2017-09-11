@@ -9,6 +9,12 @@ import android.view.View;
 
 public class SecondActivity extends AppCompatActivity {
 
+    /* ------------------------*/
+    /*    FILE VERSION 1.0     */
+    /*                         */
+    /* ------------------------*/
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
