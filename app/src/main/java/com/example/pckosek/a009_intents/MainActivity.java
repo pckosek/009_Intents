@@ -1,6 +1,7 @@
 package com.example.pckosek.a009_intents;
 
 import android.content.Intent;
+import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,7 +10,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     /* ------------------------*/
-    /*    FILE VERSION 1.0     */
+    /*    FILE VERSION 2.0     */
     /*                         */
     /* ------------------------*/
 
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(this, SecondActivity.class);
+        Intent intent = new Intent(Intent.ACTION_DEFAULT, ContactsContract.Contacts.CONTENT_URI);
         startActivity(intent);
     }
 }
